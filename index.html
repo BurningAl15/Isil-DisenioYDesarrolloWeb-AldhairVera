@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sabor Peruano - Restaurante de comida peruana tradicional con toque internacional.">
+    <title>Sabor Peruano | Aldhair Vera Camacho</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap">
+            <div class="contact-info">
+                <span class="me-3"><i class="fas fa-map-marker-alt"></i> Av. Larco 123, Miraflores, Lima</span>
+                <span class="me-3"><a href="tel:+51999123456"><i class="fas fa-phone-alt"></i> +51 999 123
+                        456</a></span>
+                <span><a href="mailto:reservas@saborperuano.com"><i class="fas fa-envelope"></i>
+                        reservas@saborperuano.com</a></span>
+            </div>
+            <div class="social-icons d-none d-md-block">
+                <a href="#" target="_blank" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" class="me-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h1 class="h4 m-0 d-inline"><i class="fas fa-utensils"></i> Sabor<span>Peruano</span></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carta">Carta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#chefs">Chefs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary-custom" href="#reservar">Reservar Mesa</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <section id="inicio" class="p-0">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="assets/img/lomo_saltado.png" class="d-block w-100" alt="Lomo Saltado Tradicional">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="w-100 h5">Lomo Saltado Tradicional</h2>
+                        <p>El sabor auténtico del wok peruano en tu mesa.</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="assets/img/ceviche.png" class="d-block w-100" alt="Ceviche Clásico">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="w-100 h5">Ceviche Fresco</h2>
+                        <p>Pescado del día con el toque perfecto de limón y ají.</p>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <img src="assets/img/aji_de_gallina.png" class="d-block w-100" alt="Ají de Gallina">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="variant h5">Ají de Gallina</h2>
+                        <p>Nuestra receta secreta con la cremosidad ideal.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- NOSOTROS SECTION -->
+    <section id="nosotros" class="bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="assets/img/lomo_saltado.png" alt="Nuestra Historia" class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-title text-start">
+                        <span>Nuestra Historia</span>
+                        <h2>Tradición Milenaria</h2>
+                    </div>
+                    <p class="lead text-muted">Desde 1990, Sabor Peruano ha sido un embajador de la gastronomía peruana,
+                        llevando los sabores de nuestra tierra al mundo.</p>
+                    <p>Nuestra cocina es un homenaje a la diversidad de ingredientes y culturas que conforman el Perú.
+                        Cada plato cuenta una historia de fusión, pasión y respeto por la tradición.</p>
+                    <a href="#carta" class="btn btn-primary-custom mt-3">Ver Nuestra Carta</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARTA / MENU SECTION -->
+    <section id="carta" class="container">
+        <div class="section-title">
+            <span>Delicias Culinarias</span>
+            <h2>Nuestra Carta</h2>
+        </div>
+        <div class="row g-4">
+            <!-- Item 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="assets/img/ceviche.png" class="card-img-top" alt="Ceviche"
+                        style="height: 250px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h3 class="card-title fw-bold h5">Ceviche Clásico</h3>
+                        <p class="card-text text-muted">Pesca del día marinada en leche de tigre, acompañado de camote y
+                            choclo.</p>
+                        <span class="d-block text-primary fw-bold fs-5">s./ 18.00</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="assets/img/lomo_saltado.png" class="card-img-top" alt="Lomo Saltado"
+                        style="height: 250px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h3 class="card-title fw-bold h5">Lomo Saltado</h3>
+                        <p class="card-text text-muted">Trozos de lomo fino salteados al wok con cebolla, tomate y papas
+                            fritas.</p>
+                        <span class="d-block text-primary fw-bold fs-5">s./ 22.00</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="assets/img/aji_de_gallina.png" class="card-img-top" alt="Ají de Gallina"
+                        style="height: 250px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h3 class="card-title fw-bold h5">Ají de Gallina</h3>
+                        <p class="card-text text-muted">Pechuga deshilachada en crema de ají amarillo, nueces y
+                            parmesano.</p>
+                        <span class="d-block text-primary fw-bold fs-5">s./ 16.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHEFS SECTION -->
+    <section id="chefs" class="container">
+        <div class="section-title">
+            <span>Nuestros Expertos</span>
+            <h2>Conoce a Nuestro Equipo</h2>
+            <p class="text-muted mx-auto" style="max-width: 600px;">Pasión, tradición y técnica se unen en nuestra
+                cocina para brindarte la mejor experiencia gastronómica del Perú para el mundo.</p>
+        </div>
+
+        <div class="row">
+            <!-- Chef 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="team-card">
+                    <div class="team-img-container">
+                        <img src="assets/img/chef1.png" alt="Chef Ejecutivo">
+                    </div>
+                    <h3>Carlos Ramírez</h3>
+                    <span class="role">Chef Ejecutivo</span>
+                    <div class="social-links mb-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p>Con más de 15 años de experiencia llevando la comida peruana a los paladares más exigentes de
+                        Europa y América.</p>
+                </div>
+            </div>
+
+            <!-- Chef 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="team-card">
+                    <div class="team-img-container">
+                        <img src="assets/img/chef2.png" alt="Jefa de Cocina">
+                    </div>
+                    <h3>María Solís</h3>
+                    <span class="role">Pastelería y Postres</span>
+                    <div class="social-links mb-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p>Especialista en dulces tradicionales, reinventando el Suspiro a la Limeña y los picarones con
+                        técnicas modernas.</p>
+                </div>
+            </div>
+
+            <!-- Chef 3 -->
+            <div class="col-lg-4 col-md-6 mx-auto">
+                <div class="team-card">
+                    <div class="team-img-container">
+                        <img src="assets/img/chef3.png" alt="Sous Chef">
+                    </div>
+                    <h3>Javier Tello</h3>
+                    <span class="role">Sous Chef</span>
+                    <div class="social-links mb-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p>Experto en pescados y mariscos, garantizando que cada ceviche salga con la frescura y el punto
+                        exacto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO SECTION -->
+    <section id="contacto" class="bg-light">
+        <div class="container">
+            <div class="section-title">
+                <span>Reserva tu Mesa</span>
+                <h2>Contáctanos</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="reservar" class="bg-white p-5 rounded shadow">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Nombre Completo</label>
+                                <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="tucorreo@ejemplo.com">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="+51 999...">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="guests" class="form-label">Número de Personas</label>
+                                <select class="form-select" id="guests">
+                                    <option selected>2 Personas</option>
+                                    <option>3 Personas</option>
+                                    <option>4 Personas</option>
+                                    <option>5+ Personas</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Mensaje Especial</label>
+                                <textarea class="form-control" id="message" rows="4"
+                                    placeholder="Alguna alergia o petición especial?"></textarea>
+                            </div>
+                            <div class="col-12 text-center mt-4">
+                                <button type="submit" class="btn btn-primary-custom px-5">Enviar Reserva</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Sabor Peruano. Todos los derechos reservados.</p>
+            <p class="small text-muted">Desarrollado por Aldhair Vera Camacho para Evaluación Integral.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="assets/scripts/main.js"></script>
+</body>
+
+</html>
